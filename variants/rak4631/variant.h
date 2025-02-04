@@ -97,8 +97,8 @@ static const uint8_t AREF = PIN_AREF;
 /*
  * Serial interfaces
  */
-#define PIN_SERIAL1_RX (15)
-#define PIN_SERIAL1_TX (16)
+#define PIN_SERIAL1_RX (19)
+#define PIN_SERIAL1_TX (20)
 
 // Connected to Jlink CDC
 #define PIN_SERIAL2_RX (8)
