@@ -52,9 +52,9 @@ void AirQualityTelemetryModule::i2cScanFinished(ScanI2C *i2cScanner)
         as other modules already had already been initialized (screen)
     */
 
-    // moduleConfig.telemetry.air_quality_enabled = 1;
-    // moduleConfig.telemetry.air_quality_screen_enabled = 1;
-    // moduleConfig.telemetry.air_quality_interval = 15;
+     moduleConfig.telemetry.air_quality_enabled = 1;
+     moduleConfig.telemetry.air_quality_screen_enabled = 1;
+     moduleConfig.telemetry.air_quality_interval = 15;
 
     // Add here supported sensors in the Air Quality module
     // These sensors will be scanned twice, once in the first scan,

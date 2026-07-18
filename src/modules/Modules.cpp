@@ -77,6 +77,9 @@
 #include "modules/Telemetry/AirQualityTelemetry.h"
 #include "modules/Telemetry/Sensor/TelemetrySensor.h"
 #endif
+#if defined(ARCH_ESP32) && !MESHTASTIC_EXCLUDE_SHARP_PM25
+#include "modules/SharpPM25Sensor.h"
+#endif
 #if HAS_TELEMETRY && !MESHTASTIC_EXCLUDE_POWER_TELEMETRY
 #include "modules/Telemetry/PowerTelemetry.h"
 #endif
@@ -230,6 +233,9 @@ void setupModules()
         (moduleConfig.telemetry.air_quality_enabled || moduleConfig.telemetry.air_quality_screen_enabled)) {
         new AirQualityTelemetryModule();
     }
+#endif
+#if defined(ARCH_ESP32) && !MESHTASTIC_EXCLUDE_SHARP_PM25
+    sharpPM25Sensor = new SharpPM25Sensor();
 #endif
 #if !MESHTASTIC_EXCLUDE_HEALTH_TELEMETRY
     if (nodeTelemetrySensorsMap[meshtastic_TelemetrySensorType_MAX30102].first > 0 ||

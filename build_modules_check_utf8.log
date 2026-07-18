@@ -1,0 +1,1139 @@
+﻿Processing heltec-v3 (board: heltec_wifi_lora_32_V3; platform: 
+https://github.com/pioarduino/platform-espressif32/releases/download/55.03.39/platform-espressif32.zip; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+platformio : warning: in the working copy of '.vscode/extensions.json', CRLF 
+will be replaced by LF the next time Git touches it
+At line:1 char:1
++ platformio run -d D:\firmware -e heltec-v3 > D:\firmware\build_module ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (warning: in the... Git touches it 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+PROGNAME: firmware-heltec-v3-2.8.0.d4aa776
+ESP32_FS_IMAGE_NAME: littlefs-heltec-v3-2.8.0.d4aa776
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/heltec_wifi_lora_32_V3.html
+PLATFORM: Espressif 32 (55.3.39) > Heltec WiFi LoRa 32 (V3)
+HARDWARE: ESP32S3 240MHz, 320KB RAM, 8MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-builtin, esp-prog, esp-prog-2, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - contrib-piohome @ 3.4.4 
+ - framework-arduinoespressif32 @ 3.3.9 
+ - framework-arduinoespressif32-libs @ 5.5.4+sha.735507283d 
+ - framework-espidf @ 3.50504.0 (5.5.4) 
+ - tool-cmake @ 4.0.3 
+ - tool-cppcheck @ 2.20.1 
+ - tool-esp-rom-elfs @ 2024.10.11 
+ - tool-esptoolpy @ 5.3.0 
+ - tool-mklittlefs @ 1.203.210628 (2.3) 
+ - tool-ninja @ 1.13.1 
+ - tool-scons @ 4.40801.0 (4.8.1) 
+ - tool-xtensa-esp-elf-gdb @ 17.1.0+20260402 
+ - toolchain-xtensa-esp-elf @ 14.2.0+20260121
+[ComponentManager] BT/BLE protection enabled
+[ComponentManager] Protected BT library: bt
+[ComponentManager] Protected BT library: nimble-arduino
+[ComponentManager] Ignored library: openthread (2 entries)
+[ComponentManager] Ignored library: mqtt (1 entries)
+[ComponentManager] Updated build file (3 total removals)
+[ComponentManager] Processed 15 ignored libraries
+[ComponentManager] Session completed with 7 changes
+*** Added LTO flags for Arduino compile ***
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+[nanopb] No generation needed.
+Found 98 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- ESP8266 and ESP32 OLED driver for SSD1306 displays @ 4.4.1
+|-- OneButton @ 2.6.1
+|-- arduino-fsm @ 2.2.0
+|-- TinyGPSPlus @ 1.0.3
+|-- ArduinoThread @ 0.0.0+20260718094900
+|-- Nanopb @ 0.4.9+1
+|-- ErriezCRC32 @ 1.0.1
+|-- NonBlockingRTTTL @ 1.4.0
+|-- TBPubSubClient @ 2.12.1
+|-- NTPClient @ 3.2.1
+|-- Adafruit BusIO @ 1.17.4
+|-- Adafruit Unified Sensor @ 1.1.15
+|-- Adafruit GFX Library @ 1.12.6
+|-- Adafruit NeoPixel @ 1.15.5
+|-- Adafruit SSD1306 @ 2.5.17
+|-- Adafruit BMP280 Library @ 3.0.0
+|-- Adafruit BMP085 Library @ 1.2.4
+|-- Adafruit BME280 Library @ 2.3.0
+|-- Adafruit DPS310 @ 1.1.6
+|-- Adafruit SH110X @ 2.1.14
+|-- Adafruit MCP9808 Library @ 2.0.2
+|-- Adafruit INA260 Library @ 1.5.3
+|-- Adafruit INA219 @ 1.2.3
+|-- Adafruit MPU6050 @ 2.2.9
+|-- Adafruit LIS3DH @ 1.3.0
+|-- Adafruit AHTX0 @ 2.0.6
+|-- Adafruit LSM6DS @ 4.7.4
+|-- Adafruit TSL2591 Library @ 1.4.5
+|-- EmotiBit MLX90632 @ 1.0.8
+|-- Adafruit MLX90614 Library @ 2.1.6
+|-- INA3221 @ 0.4.2
+|-- QMC5883LCompass @ 1.2.3
+|-- DFRobot_RTU @ 1.0.6
+|-- DFRobot_RainfallSensor @ 1.0.0
+|-- INA226 @ 0.6.6
+|-- SparkFun MAX3010x Pulse and Proximity Sensor Library @ 1.1.2
+|-- SparkFun 9DoF IMU Breakout - ICM 20948 - Arduino Library @ 1.3.2
+|-- ICM42670P @ 1.0.8
+|-- Adafruit LTR390 Library @ 1.1.2
+|-- Adafruit PCT2075 @ 1.0.6
+|-- DFRobot_BMM150 @ 1.0.0
+|-- SparkFun MMC5983MA Magnetometer Arduino Library @ 1.1.5
+|-- Adafruit TSL2561 @ 1.1.3
+|-- BH1750_WE @ 1.1.10
+|-- Fusion @ 1.2.12
+|-- Sensirion Core @ 0.7.3
+|-- Sensirion I2C SCD4x @ 1.1.0
+|-- Sensirion I2C SFA3x @ 1.0.0
+|-- Sensirion I2C SCD30 @ 1.1.1
+|-- arduino-sht @ 1.2.6
+|-- Adafruit SPA06_003 @ 1.0.2
+|-- Adafruit BMP3XX Library @ 2.1.6
+|-- Adafruit MAX1704X @ 1.0.3
+|-- Adafruit LPS2X @ 2.0.6
+|-- Adafruit VEML7700 Library @ 2.1.6
+|-- SparkFun Qwiic Scale NAU7802 Arduino Library @ 1.0.6
+|-- ClosedCube OPT3001 @ 1.1.2
+|-- DFRobot_LarkWeatherStation @ 1.0.0
+|-- bsec2 @ 1.10.2610
+|-- BME68x Sensor library @ 1.3.40408
+|-- RadioLib @ 7.7.1
+|-- esp32_https_server @ 1.0.0
+|-- libpax @ 1.1.0
+|-- XPowersLib @ 0.3.3
+|-- Crypto @ 0.0.0+20260718095024
+|-- ESP32 Codec2 @ 1.0.1
+|-- SD @ 3.3.9
+|-- SPI @ 3.3.9
+|-- Ethernet @ 3.3.9
+|-- WiFi @ 3.3.9
+|-- Wire @ 3.3.9
+|-- Preferences @ 3.3.9
+|-- WebServer @ 3.3.9
+|-- ESPmDNS @ 3.3.9
+|-- BLE @ 3.3.9
+|-- LittleFS @ 3.3.9
+|-- NetworkClientSecure @ 3.3.9
+|-- ESP32 Async UDP @ 3.3.9
+Building in release mode
+warning: in the working copy of '.vscode/extensions.json', CRLF will be 
+replaced by LF the next time Git touches it
+Using meshtastic platformio-custom.py, firmware version 2.8.0.d4aa776 on heltec-v3
+Using flags:
+-DAPP_VERSION=2.8.0.d4aa776
+-DAPP_VERSION_SHORT=2.8.0
+-DAPP_ENV=heltec-v3
+-DAPP_REPO=meshtastic/firmware
+-DBUILD_EPOCH=1784347200
+-DUSERPREFS_RINGTONE_RTTTL=\"24:d=32,o=5,b=565:f6,p,f6,4p,p,f6,p,f6,2p,p,b6,p,b6,p,b6,p,b6,p,b,p,b,p,b,p,b,p,b,p,b,p,b,p,b,1p.,2p.,p\"
+-DUSERPREFS_TZ_STRING=\"tzplaceholder                                         \"
+Compiling .pio\build\heltec-v3\lib819\Wire\Wire.cpp.o
+Compiling .pio\build\heltec-v3\lib050\SPI\SPI.cpp.o
+Compiling .pio\build\heltec-v3\lib575\ESP8266 and ESP32 OLED driver for SSD1306 displays\OLEDDisplay.cpp.o
+Compiling .pio\build\heltec-v3\lib575\ESP8266 and ESP32 OLED driver for SSD1306 displays\OLEDDisplayFonts.cpp.o
+Compiling .pio\build\heltec-v3\lib575\ESP8266 and ESP32 OLED driver for SSD1306 displays\OLEDDisplayUi.cpp.o
+Compiling .pio\build\heltec-v3\lib006\OneButton\OneButton.cpp.o
+Compiling .pio\build\heltec-v3\lib006\OneButton\OneButtonTiny.cpp.o
+Compiling .pio\build\heltec-v3\lib6d3\arduino-fsm\Fsm.cpp.o
+Compiling .pio\build\heltec-v3\lib27a\TinyGPSPlus\TinyGPS++.cpp.o
+Compiling .pio\build\heltec-v3\libed8\ArduinoThread\Thread.cpp.o
+Compiling .pio\build\heltec-v3\libed8\ArduinoThread\ThreadController.cpp.o
+Compiling .pio\build\heltec-v3\lib4c6\Nanopb\pb_common.c.o
+Compiling .pio\build\heltec-v3\lib4c6\Nanopb\pb_decode.c.o
+Compiling .pio\build\heltec-v3\lib4c6\Nanopb\pb_encode.c.o
+Compiling .pio\build\heltec-v3\lib332\ErriezCRC32\ErriezCRC32.c.o
+Compiling .pio\build\heltec-v3\lib301\NonBlockingRTTTL\NonBlockingRtttl.cpp.o
+Compiling .pio\build\heltec-v3\lib273\TBPubSubClient\PubSubClient.cpp.o
+Compiling .pio\build\heltec-v3\libf6b\NTPClient\NTPClient.cpp.o
+Compiling .pio\build\heltec-v3\lib302\Adafruit BusIO\Adafruit_BusIO_Register.cpp.o
+Compiling .pio\build\heltec-v3\lib302\Adafruit BusIO\Adafruit_GenericDevice.cpp.o
+Compiling .pio\build\heltec-v3\lib302\Adafruit BusIO\Adafruit_I2CDevice.cpp.o
+Compiling .pio\build\heltec-v3\lib302\Adafruit BusIO\Adafruit_SPIDevice.cpp.o
+Compiling .pio\build\heltec-v3\lib3a3\Adafruit Unified Sensor\Adafruit_Sensor.cpp.o
+Compiling .pio\build\heltec-v3\lib595\Adafruit GFX Library\Adafruit_GFX.cpp.o
+Compiling .pio\build\heltec-v3\lib595\Adafruit GFX Library\Adafruit_GrayOLED.cpp.o
+Compiling .pio\build\heltec-v3\lib595\Adafruit GFX Library\Adafruit_SPITFT.cpp.o
+Compiling .pio\build\heltec-v3\lib595\Adafruit GFX Library\glcdfont.c.o
+Compiling .pio\build\heltec-v3\lib44f\Adafruit NeoPixel\Adafruit_NeoPixel.cpp.o
+Compiling .pio\build\heltec-v3\lib44f\Adafruit NeoPixel\Adafruit_Neopixel_RP2.cpp.o
+Compiling .pio\build\heltec-v3\lib44f\Adafruit NeoPixel\esp.c.o
+Compiling .pio\build\heltec-v3\lib44f\Adafruit NeoPixel\esp8266.c.o
+Compiling .pio\build\heltec-v3\lib44f\Adafruit NeoPixel\kendyte_k210.c.o
+Compiling .pio\build\heltec-v3\lib44f\Adafruit NeoPixel\psoc6.c.o
+Compiling .pio\build\heltec-v3\lib307\Adafruit SSD1306\Adafruit_SSD1306.cpp.o
+Compiling .pio\build\heltec-v3\lib91c\Adafruit BMP280 Library\Adafruit_BMP280.cpp.o
+Compiling .pio\build\heltec-v3\libdc0\Adafruit BMP085 Library\Adafruit_BMP085.cpp.o
+Compiling .pio\build\heltec-v3\lib7b9\Adafruit BME280 Library\Adafruit_BME280.cpp.o
+Compiling .pio\build\heltec-v3\libbbc\Adafruit DPS310\Adafruit_DPS310.cpp.o
+Compiling .pio\build\heltec-v3\lib5bf\Adafruit SH110X\Adafruit_SH1106G.cpp.o
+Compiling .pio\build\heltec-v3\lib5bf\Adafruit SH110X\Adafruit_SH1107.cpp.o
+Compiling .pio\build\heltec-v3\lib5bf\Adafruit SH110X\Adafruit_SH110X.cpp.o
+Compiling .pio\build\heltec-v3\libcc0\Adafruit MCP9808 Library\Adafruit_MCP9808.cpp.o
+Compiling .pio\build\heltec-v3\libd3d\Adafruit INA260 Library\Adafruit_INA260.cpp.o
+Compiling .pio\build\heltec-v3\lib50f\Adafruit INA219\Adafruit_INA219.cpp.o
+Compiling .pio\build\heltec-v3\lib88e\Adafruit MPU6050\Adafruit_MPU6050.cpp.o
+Compiling .pio\build\heltec-v3\lib43c\Adafruit LIS3DH\Adafruit_LIS3DH.cpp.o
+Compiling .pio\build\heltec-v3\lib836\Adafruit AHTX0\Adafruit_AHTX0.cpp.o
+Compiling .pio\build\heltec-v3\lib3cf\Adafruit LSM6DS\Adafruit_ISM330DHCX.cpp.o
+Compiling .pio\build\heltec-v3\lib3cf\Adafruit LSM6DS\Adafruit_LSM6DS.cpp.o
+Compiling .pio\build\heltec-v3\lib3cf\Adafruit LSM6DS\Adafruit_LSM6DS3.cpp.o
+Compiling .pio\build\heltec-v3\lib3cf\Adafruit LSM6DS\Adafruit_LSM6DS33.cpp.o
+Compiling .pio\build\heltec-v3\lib3cf\Adafruit LSM6DS\Adafruit_LSM6DS3TRC.cpp.o
+Compiling .pio\build\heltec-v3\lib3cf\Adafruit LSM6DS\Adafruit_LSM6DSL.cpp.o
+Compiling .pio\build\heltec-v3\lib3cf\Adafruit LSM6DS\Adafruit_LSM6DSO32.cpp.o
+Compiling .pio\build\heltec-v3\lib3cf\Adafruit LSM6DS\Adafruit_LSM6DSOX.cpp.o
+Compiling .pio\build\heltec-v3\lib68c\Adafruit TSL2591 Library\Adafruit_TSL2591.cpp.o
+.pio/libdeps/heltec-v3/Adafruit INA219/Adafruit_INA219.cpp: In member function 
+'void Adafruit_INA219::setCalibration_32V_2A()':
+.pio/libdeps/heltec-v3/Adafruit INA219/Adafruit_INA219.cpp:266:53: warning: 
+bitwise operation between different enumeration types '<unnamed enum>' and 
+'<unnamed enum>' is deprecated [-Wdeprecated-enum-enum-conversion]
+  266 |   uint16_t config = INA219_CONFIG_BVOLTAGERANGE_32V |
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  267 |                     INA219_CONFIG_GAIN_8_320MV | 
+INA219_CONFIG_BADCRES_12BIT |
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~       
+.pio/libdeps/heltec-v3/Adafruit INA219/Adafruit_INA219.cpp: In member function 
+'void Adafruit_INA219::setCalibration_32V_1A()':
+.pio/libdeps/heltec-v3/Adafruit INA219/Adafruit_INA219.cpp:377:53: warning: 
+bitwise operation between different enumeration types '<unnamed enum>' and 
+'<unnamed enum>' is deprecated [-Wdeprecated-enum-enum-conversion]
+  377 |   uint16_t config = INA219_CONFIG_BVOLTAGERANGE_32V |
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  378 |                     INA219_CONFIG_GAIN_8_320MV | 
+INA219_CONFIG_BADCRES_12BIT |
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~       
+.pio/libdeps/heltec-v3/Adafruit INA219/Adafruit_INA219.cpp: In member function 
+'void Adafruit_INA219::setCalibration_16V_400mA()':
+.pio/libdeps/heltec-v3/Adafruit INA219/Adafruit_INA219.cpp:468:53: warning: 
+bitwise operation between different enumeration types '<unnamed enum>' and 
+'<unnamed enum>' is deprecated [-Wdeprecated-enum-enum-conversion]
+  468 |   uint16_t config = INA219_CONFIG_BVOLTAGERANGE_16V |
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  469 |                     INA219_CONFIG_GAIN_1_40MV | 
+INA219_CONFIG_BADCRES_12BIT |
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~        
+Compiling .pio\build\heltec-v3\lib007\EmotiBit MLX90632\SparkFun_MLX90632_Arduino_Library.cpp.o
+Compiling .pio\build\heltec-v3\lib306\Adafruit MLX90614 Library\Adafruit_MLX90614.cpp.o
+Compiling .pio\build\heltec-v3\libe05\INA3221\INA3221.cpp.o
+Compiling .pio\build\heltec-v3\lib1ad\QMC5883LCompass\QMC5883LCompass.cpp.o
+Compiling .pio\build\heltec-v3\lib728\DFRobot_RTU\DFRobot_RTU.cpp.o
+.pio/libdeps/heltec-v3/Adafruit TSL2591 Library/Adafruit_TSL2591.cpp: In 
+member function 'void Adafruit_TSL2591::setGain(tsl2591Gain_t)':
+.pio/libdeps/heltec-v3/Adafruit TSL2591 Library/Adafruit_TSL2591.cpp:173:71: 
+warning: bitwise operation between different enumeration types 
+'tsl2591IntegrationTime_t' and 'tsl2591Gain_t' is deprecated 
+[-Wdeprecated-enum-enum-conversion]
+  173 |   write8(TSL2591_COMMAND_BIT | TSL2591_REGISTER_CONTROL, _integration 
+| _gain);
+      |                                                          
+~~~~~~~~~~~~~^~~~~~~
+.pio/libdeps/heltec-v3/Adafruit TSL2591 Library/Adafruit_TSL2591.cpp: In 
+member function 'void Adafruit_TSL2591::setTiming(tsl2591IntegrationTime_t)':
+.pio/libdeps/heltec-v3/Adafruit TSL2591 Library/Adafruit_TSL2591.cpp:200:71: 
+warning: bitwise operation between different enumeration types 
+'tsl2591IntegrationTime_t' and 'tsl2591Gain_t' is deprecated 
+[-Wdeprecated-enum-enum-conversion]
+  200 |   write8(TSL2591_COMMAND_BIT | TSL2591_REGISTER_CONTROL, _integration 
+| _gain);
+      |                                                          
+~~~~~~~~~~~~~^~~~~~~
+Compiling .pio\build\heltec-v3\lib5c7\DFRobot_RainfallSensor\DFRobot_RainfallSensor.cpp.o
+.pio/libdeps/heltec-v3/EmotiBit 
+MLX90632/src/SparkFun_MLX90632_Arduino_Library.cpp: In member function 'float 
+MLX90632::getObjectTempF()':
+.pio/libdeps/heltec-v3/EmotiBit 
+MLX90632/src/SparkFun_MLX90632_Arduino_Library.cpp:419:23: warning: unused 
+variable 'AMB' [-Wunused-variable]
+  419 |                 float AMB;
+      |                       ^~~
+.pio/libdeps/heltec-v3/EmotiBit 
+MLX90632/src/SparkFun_MLX90632_Arduino_Library.cpp:420:23: warning: unused 
+variable 'Sto' [-Wunused-variable]
+  420 |                 float Sto;
+      |                       ^~~
+.pio/libdeps/heltec-v3/EmotiBit 
+MLX90632/src/SparkFun_MLX90632_Arduino_Library.cpp: In member function 'void 
+MLX90632::setMeasurementRate(uint8_t)':
+.pio/libdeps/heltec-v3/EmotiBit 
+MLX90632/src/SparkFun_MLX90632_Arduino_Library.cpp:775:26: warning: unused 
+variable 'returnError' [-Wunused-variable]
+  775 |         MLX90632::status returnError = setMode(MODE_STEP);
+      |                          ^~~~~~~~~~~
+Compiling .pio\build\heltec-v3\lib09d\INA226\INA226.cpp.o
+Compiling .pio\build\heltec-v3\lib9f4\SparkFun MAX3010x Pulse and Proximity Sensor Library\MAX30105.cpp.o
+Compiling .pio\build\heltec-v3\lib9f4\SparkFun MAX3010x Pulse and Proximity Sensor Library\heartRate.cpp.o
+Compiling .pio\build\heltec-v3\lib9f4\SparkFun MAX3010x Pulse and Proximity Sensor Library\spo2_algorithm.cpp.o
+Compiling .pio\build\heltec-v3\libef2\SparkFun 9DoF IMU Breakout - ICM 20948 - Arduino Library\ICM_20948.cpp.o
+Compiling .pio\build\heltec-v3\libef2\SparkFun 9DoF IMU Breakout - ICM 20948 - Arduino Library\util\ICM_20948_C.c.o
+Compiling .pio\build\heltec-v3\lib402\ICM42670P\ICM42670P.cpp.o
+Compiling .pio\build\heltec-v3\lib402\ICM42670P\imu\inv_imu_apex.c.o
+Compiling .pio\build\heltec-v3\lib402\ICM42670P\imu\inv_imu_driver.c.o
+Compiling .pio\build\heltec-v3\lib402\ICM42670P\imu\inv_imu_selftest.c.o
+Compiling .pio\build\heltec-v3\lib402\ICM42670P\imu\inv_imu_transport.c.o
+Compiling .pio\build\heltec-v3\lib402\ICM42670P\inv_time.c.o
+Compiling .pio\build\heltec-v3\libf1a\Adafruit LTR390 Library\Adafruit_LTR390.cpp.o
+In file included from .pio/libdeps/heltec-v3/SparkFun MAX3010x Pulse and 
+Proximity Sensor Library/src/MAX30105.cpp:12:
+.pio/libdeps/heltec-v3/SparkFun MAX3010x Pulse and Proximity Sensor 
+Library/src/MAX30105.h:42:11: warning: "I2C_BUFFER_LENGTH" redefined
+   42 |   #define I2C_BUFFER_LENGTH 32
+      |           ^~~~~~~~~~~~~~~~~
+In file included from .pio/libdeps/heltec-v3/SparkFun MAX3010x Pulse and 
+Proximity Sensor Library/src/MAX30105.h:20:
+C:/Users/Administrator/.platformio/packages/framework-arduinoespressif32/librar
+ies/Wire/src/Wire.h:49:9: note: this is the location of the previous definition
+   49 | #define I2C_BUFFER_LENGTH 128  // Default size, if none is set using 
+Wire::setBuffersize(size_t)
+      |         ^~~~~~~~~~~~~~~~~
+Compiling .pio\build\heltec-v3\liba95\Adafruit PCT2075\Adafruit_PCT2075.cpp.o
+Compiling .pio\build\heltec-v3\libbd8\DFRobot_BMM150\DFRobot_BMM150.cpp.o
+.pio/libdeps/heltec-v3/SparkFun MAX3010x Pulse and Proximity Sensor 
+Library/src/MAX30105.cpp: In member function 'void 
+MAX30105::enableSlot(uint8_t, uint8_t)':
+.pio/libdeps/heltec-v3/SparkFun MAX3010x Pulse and Proximity Sensor 
+Library/src/MAX30105.cpp:292:11: warning: unused variable 'originalContents' 
+[-Wunused-variable]
+  292 |   uint8_t originalContents;
+      |           ^~~~~~~~~~~~~~~~
+Compiling .pio\build\heltec-v3\libea8\SparkFun MMC5983MA Magnetometer Arduino Library\SparkFun_MMC5983MA_Arduino_Library.cpp.o
+Compiling .pio\build\heltec-v3\libea8\SparkFun MMC5983MA Magnetometer Arduino Library\SparkFun_MMC5983MA_IO.cpp.o
+.pio/libdeps/heltec-v3/SparkFun MAX3010x Pulse and Proximity Sensor 
+Library/src/heartRate.cpp: In function 'bool checkForBeat(int32_t)':
+.pio/libdeps/heltec-v3/SparkFun MAX3010x Pulse and Proximity Sensor 
+Library/src/heartRate.cpp:108:33: warning: suggest parentheses around 
+comparison in operand of '&' [-Wparentheses]
+  108 |     if ((IR_AC_Max - IR_AC_Min) > 20 & (IR_AC_Max - IR_AC_Min) < 1000)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+Compiling .pio\build\heltec-v3\lib9b3\Adafruit TSL2561\Adafruit_TSL2561_U.cpp.o
+.pio/libdeps/heltec-v3/ICM42670P/src/ICM42670P.cpp: In member function 'int 
+ICM42670::startWakeOnMotion(uint8_t, ICM42670_irq_handler)':
+.pio/libdeps/heltec-v3/ICM42670P/src/ICM42670P.cpp:350:29: warning: unused 
+variable 'apex_inputs' [-Wunused-variable]
+  350 |   inv_imu_apex_parameters_t apex_inputs;
+      |                             ^~~~~~~~~~~
+Compiling .pio\build\heltec-v3\lib648\BH1750_WE\BH1750_WE.cpp.o
+Compiling .pio\build\heltec-v3\libbfa\Fusion\FusionAhrs.c.o
+Compiling .pio\build\heltec-v3\libbfa\Fusion\FusionBias.c.o
+Compiling .pio\build\heltec-v3\libbfa\Fusion\FusionCompass.c.o
+Compiling .pio\build\heltec-v3\lib718\Sensirion Core\SensirionCrc.cpp.o
+Compiling .pio\build\heltec-v3\lib718\Sensirion Core\SensirionErrors.cpp.o
+Compiling .pio\build\heltec-v3\lib718\Sensirion Core\SensirionI2CCommunication.cpp.o
+Compiling .pio\build\heltec-v3\lib718\Sensirion Core\SensirionI2CTxFrame.cpp.o
+Compiling .pio\build\heltec-v3\lib718\Sensirion Core\SensirionRxFrame.cpp.o
+Compiling .pio\build\heltec-v3\lib718\Sensirion Core\SensirionShdlcCommunication.cpp.o
+Compiling .pio\build\heltec-v3\lib718\Sensirion Core\SensirionShdlcTxFrame.cpp.o
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp: In member function 
+'bool DFRobot_BMM150::sensorInit()':
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp:23:11: warning: 
+unused variable 'rslt' [-Wunused-variable]
+   23 |   int8_t  rslt    = 0;
+      |           ^~~~
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp: In member function 
+'void DFRobot_BMM150::setMeasurementXYZ(uint8_t, uint8_t, uint8_t)':
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp:263:11: warning: 
+unused variable 'rslt' [-Wunused-variable]
+  263 |   int8_t  rslt;
+      |           ^~~~
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp: In member function 
+'void DFRobot_BMM150::setInterruputLatch(uint8_t)':
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp:489:11: warning: 
+unused variable 'rslt' [-Wunused-variable]
+  489 |   int8_t  rslt;
+      |           ^~~~
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp: In member function 
+'int8_t DFRobot_BMM150::normalSelfTest()':
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp:706:10: warning: 
+unused variable 'rslt' [-Wunused-variable]
+  706 |   int8_t rslt;
+      |          ^~~~
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp: In member function 
+'int8_t DFRobot_BMM150::advSelfTest()':
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp:776:11: warning: 
+unused variable 'selfTestCurrent' [-Wunused-variable]
+  776 |   uint8_t selfTestCurrent;
+      |           ^~~~~~~~~~~~~~~
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp: In member function 
+'bool DFRobot_BMM150::getDataOverrunState()':
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp:853:11: warning: 
+unused variable 'rslt' [-Wunused-variable]
+  853 |   int8_t  rslt;
+      |           ^~~~
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp: In member function 
+'void DFRobot_BMM150::setOverflowPin(uint8_t)':
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp:865:11: warning: 
+unused variable 'rslt' [-Wunused-variable]
+  865 |   int8_t  rslt;
+      |           ^~~~
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp: In member function 
+'bool DFRobot_BMM150::getOverflowState()':
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.cpp:878:11: warning: 
+unused variable 'rslt' [-Wunused-variable]
+  878 |   int8_t  rslt;
+      |           ^~~~
+Compiling .pio\build\heltec-v3\lib042\Sensirion I2C SCD4x\SensirionI2cScd4x.cpp.o
+Compiling .pio\build\heltec-v3\lib38b\Sensirion I2C SFA3x\SensirionI2cSfa3x.cpp.o
+Compiling .pio\build\heltec-v3\libd83\Sensirion I2C SCD30\SensirionI2cScd30.cpp.o
+.pio/libdeps/heltec-v3/Adafruit TSL2561/Adafruit_TSL2561_U.cpp: In member 
+function 'void 
+Adafruit_TSL2561_Unified::setIntegrationTime(tsl2561IntegrationTime_t)':
+.pio/libdeps/heltec-v3/Adafruit TSL2561/Adafruit_TSL2561_U.cpp:151:62: 
+warning: bitwise operation between different enumeration types 
+'tsl2561IntegrationTime_t' and 'tsl2561Gain_t' is deprecated 
+[-Wdeprecated-enum-enum-conversion]
+  151 |   write8(TSL2561_COMMAND_BIT | TSL2561_REGISTER_TIMING, time | 
+_tsl2561Gain);
+      |                                                         
+~~~~~^~~~~~~~~~~~~~
+.pio/libdeps/heltec-v3/Adafruit TSL2561/Adafruit_TSL2561_U.cpp: In member 
+function 'void Adafruit_TSL2561_Unified::setGain(tsl2561Gain_t)':
+.pio/libdeps/heltec-v3/Adafruit TSL2561/Adafruit_TSL2561_U.cpp:175:34: 
+warning: bitwise operation between different enumeration types 
+'tsl2561IntegrationTime_t' and 'tsl2561Gain_t' is deprecated 
+[-Wdeprecated-enum-enum-conversion]
+  175 |          _tsl2561IntegrationTime | gain);
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+.pio/libdeps/heltec-v3/Adafruit TSL2561/Adafruit_TSL2561_U.cpp: In member 
+function 'uint32_t Adafruit_TSL2561_Unified::calculateLux(uint16_t, uint16_t)':
+.pio/libdeps/heltec-v3/Adafruit TSL2561/Adafruit_TSL2561_U.cpp:421:14: 
+warning: comparison of unsigned expression in '>= 0' is always true 
+[-Wtype-limits]
+  421 |   if ((ratio >= 0) && (ratio <= TSL2561_LUX_K1T)) {
+      |        ~~~~~~^~~~
+Compiling .pio\build\heltec-v3\lib7ea\arduino-sht\SHTSensor.cpp.o
+Compiling .pio\build\heltec-v3\lib83d\Adafruit SPA06_003\Adafruit_SPA06_003.cpp.o
+Compiling .pio\build\heltec-v3\lib052\Adafruit BMP3XX Library\Adafruit_BMP3XX.cpp.o
+Compiling .pio\build\heltec-v3\lib052\Adafruit BMP3XX Library\bmp3.c.o
+Compiling .pio\build\heltec-v3\lib713\Adafruit MAX1704X\Adafruit_MAX1704X.cpp.o
+Compiling .pio\build\heltec-v3\lib643\Adafruit LPS2X\Adafruit_LPS22.cpp.o
+Compiling .pio\build\heltec-v3\lib643\Adafruit LPS2X\Adafruit_LPS25.cpp.o
+Compiling .pio\build\heltec-v3\lib643\Adafruit LPS2X\Adafruit_LPS2X.cpp.o
+Compiling .pio\build\heltec-v3\libf02\Adafruit VEML7700 Library\Adafruit_VEML7700.cpp.o
+Compiling .pio\build\heltec-v3\libc7f\SparkFun Qwiic Scale NAU7802 Arduino Library\SparkFun_Qwiic_Scale_NAU7802_Arduino_Library.cpp.o
+Compiling .pio\build\heltec-v3\lib570\ClosedCube OPT3001\ClosedCube_OPT3001.cpp.o
+Compiling .pio\build\heltec-v3\libeb7\DFRobot_LarkWeatherStation\DFRobot_LarkWeatherStation.cpp.o
+Compiling .pio\build\heltec-v3\lib297\BME68x Sensor library\bme68xLibrary.cpp.o
+Compiling .pio\build\heltec-v3\lib297\BME68x Sensor library\bme68x\bme68x.c.o
+Compiling .pio\build\heltec-v3\lib467\bsec2\bsec2.cpp.o
+Compiling .pio\build\heltec-v3\lib467\bsec2\commMux\commMux.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\Hal.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\Module.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\hal\Arduino\ArduinoHal.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\hal\ESP-IDF\EspHal.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\hal\RPiPico\PicoHal.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\hal\Stm32duino\Stm32wlHal.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\CC1101\CC1101.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LLCC68\LLCC68.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR11x0\LR1110.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR11x0\LR1120.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR11x0\LR1121.cpp.o
+.pio/libdeps/heltec-v3/ClosedCube OPT3001/src/ClosedCube_OPT3001.cpp: In 
+member function 'OPT3001_ErrorCode ClosedCube_OPT3001::begin(uint8_t)':
+.pio/libdeps/heltec-v3/ClosedCube OPT3001/src/ClosedCube_OPT3001.cpp:39:27: 
+warning: unused variable 'error' [-Wunused-variable]
+   39 |         OPT3001_ErrorCode error = NO_ERROR;
+      |                           ^~~~~
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR11x0\LR11x0.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR11x0\LR11x0_commands.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR11x0\LR11x0_crypto.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR11x0\LR11x0_gnss.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR11x0\LR11x0_wifi.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR11x0\LR_common.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR2021\LR2021.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR2021\LR2021_cmds_chip_control.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR2021\LR2021_cmds_flrc.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR2021\LR2021_cmds_gfsk.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR2021\LR2021_cmds_lora.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR2021\LR2021_cmds_misc.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR2021\LR2021_cmds_ook.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR2021\LR2021_cmds_oqpsk.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR2021\LR2021_cmds_radio.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR2021\LR2021_cmds_ranging.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\LR2021\LR2021_config.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\RF69\RF69.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX123x\SX1231.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX123x\SX1233.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX126x\STM32WLx.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX126x\SX1261.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX126x\SX1262.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX126x\SX1268.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX126x\SX126x.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX126x\SX126x_LR_FHSS.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX126x\SX126x_commands.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX126x\SX126x_config.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX127x\SX1272.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX127x\SX1273.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX127x\SX1276.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX127x\SX1277.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX127x\SX1278.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX127x\SX1279.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX127x\SX127x.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX128x\SX1280.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX128x\SX1281.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX128x\SX1282.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\SX128x\SX128x.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\Si443x\Si4430.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\Si443x\Si4431.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\Si443x\Si4432.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\Si443x\Si443x.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\modules\nRF24\nRF24.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\ADSB\ADSB.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\AFSK\AFSK.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\APRS\APRS.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\AX25\AX25.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\BellModem\BellModem.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\ExternalRadio\ExternalRadio.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\FSK4\FSK4.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\Hellschreiber\Hellschreiber.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\LoRaWAN\LoRaWAN.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\LoRaWAN\LoRaWANBands.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\LoRaWAN\LoRaWANPacMan.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\LoRaWAN\LoRaWANPackageTS003.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\LoRaWAN\LoRaWANPackageTS009.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\Morse\Morse.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\Pager\Pager.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\PhysicalLayer\PhysicalLayer.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\Print\ITA2String.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\Print\Print.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\RTTY\RTTY.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\protocols\SSTV\SSTV.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\utils\BCH.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\utils\CRC.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\utils\ConvCode.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\utils\Cryptography.cpp.o
+Compiling .pio\build\heltec-v3\libd17\RadioLib\utils\Utils.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\ConnectionContext.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\HTTPConnection.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\HTTPHeader.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\HTTPHeaders.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\HTTPMultipartBodyParser.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\HTTPNode.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\HTTPRequest.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\HTTPResponse.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\HTTPSConnection.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\HTTPSServer.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\HTTPServer.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\HTTPURLEncodedBodyParser.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\HTTPValidator.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\ResolvedResource.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\ResourceNode.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\ResourceParameters.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\ResourceResolver.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\SSLCert.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\ValidatorFunctions.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\WebsocketHandler.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\WebsocketInputStreambuf.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\WebsocketNode.cpp.o
+Compiling .pio\build\heltec-v3\libfdc\esp32_https_server\util.cpp.o
+Compiling .pio\build\heltec-v3\libc99\libpax\blescan.cpp.o
+Compiling .pio\build\heltec-v3\libc99\libpax\bt_hci_common.c.o
+Compiling .pio\build\heltec-v3\libc99\libpax\libpax.cpp.o
+Compiling .pio\build\heltec-v3\libc99\libpax\libpax_api.cpp.o
+Compiling .pio\build\heltec-v3\libc99\libpax\wifiscan.cpp.o
+Compiling .pio\build\heltec-v3\libaff\XPowersLib\XPowersLibInterface.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\AES128.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\AES192.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\AES256.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\AESCommon.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\AESEsp32.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\AuthenticatedCipher.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\BLAKE2b.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\BLAKE2s.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\BigNumberUtil.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\BlockCipher.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\CTR.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\ChaCha.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\ChaChaPoly.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\Cipher.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\Crypto.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\Curve25519.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\EAX.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\Ed25519.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\GCM.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\GF128.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\GHASH.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\HKDF.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\Hash.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\KeccakCore.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\NoiseSource.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\OMAC.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\P521.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\Poly1305.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\RNG.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\SHA224.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\SHA256.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\SHA3.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\SHA384.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\SHA512.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\SHAKE.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\XEdDSA.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\XOF.cpp.o
+Compiling .pio\build\heltec-v3\libfcd\Crypto\XTS.cpp.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\ButterworthFilter.cpp.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\SampleFilter.cpp.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\codebook.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\codebookd.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\codebookdt.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\codebookge.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\codebookjnd.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\codebookjvm.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\codebooklspmelvq.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\codebookmel.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\codebookres.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\codebookvq.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\codebookvqanssi.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\codec2.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\dump.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\fifo.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\interp.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\kiss_fft.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\lpc.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\lsp.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\nlp.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\pack.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\phase.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\phaseexp.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\postfilter.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\quantise.c.o
+Compiling .pio\build\heltec-v3\lib567\ESP32 Codec2\sine.c.o
+Compiling .pio\build\heltec-v3\lib33c\FS\FS.cpp.o
+Compiling .pio\build\heltec-v3\lib33c\FS\vfs_api.cpp.o
+Compiling .pio\build\heltec-v3\libdac\SD\SD.cpp.o
+Compiling .pio\build\heltec-v3\libdac\SD\sd_diskio.cpp.o
+Compiling .pio\build\heltec-v3\libdac\SD\sd_diskio_crc.c.o
+Compiling .pio\build\heltec-v3\lib551\Network\NetworkClient.cpp.o
+Compiling .pio\build\heltec-v3\lib551\Network\NetworkEvents.cpp.o
+Compiling .pio\build\heltec-v3\lib551\Network\NetworkInterface.cpp.o
+Compiling .pio\build\heltec-v3\lib551\Network\NetworkManager.cpp.o
+Compiling .pio\build\heltec-v3\lib551\Network\NetworkServer.cpp.o
+Compiling .pio\build\heltec-v3\lib551\Network\NetworkUdp.cpp.o
+Compiling .pio\build\heltec-v3\libcb9\Ethernet\ETH.cpp.o
+Compiling .pio\build\heltec-v3\libe4a\WiFi\AP.cpp.o
+Compiling .pio\build\heltec-v3\libe4a\WiFi\STA.cpp.o
+Compiling .pio\build\heltec-v3\libe4a\WiFi\WiFi.cpp.o
+Compiling .pio\build\heltec-v3\libe4a\WiFi\WiFiAP.cpp.o
+Compiling .pio\build\heltec-v3\libe4a\WiFi\WiFiGeneric.cpp.o
+Compiling .pio\build\heltec-v3\libe4a\WiFi\WiFiMulti.cpp.o
+Compiling .pio\build\heltec-v3\libe4a\WiFi\WiFiSTA.cpp.o
+Compiling .pio\build\heltec-v3\libe4a\WiFi\WiFiScan.cpp.o
+Compiling .pio\build\heltec-v3\lib07f\Preferences\Preferences.cpp.o
+Compiling .pio\build\heltec-v3\lib74f\Hash\PBKDF2_HMACBuilder.cpp.o
+Compiling .pio\build\heltec-v3\lib74f\Hash\SHA1Builder.cpp.o
+Compiling .pio\build\heltec-v3\lib74f\Hash\SHA2Builder.cpp.o
+Compiling .pio\build\heltec-v3\lib74f\Hash\SHA3Builder.cpp.o
+Compiling .pio\build\heltec-v3\lib72e\WebServer\Parsing.cpp.o
+Compiling .pio\build\heltec-v3\lib72e\WebServer\WebServer.cpp.o
+Compiling .pio\build\heltec-v3\lib72e\WebServer\detail\mimetable.cpp.o
+Compiling .pio\build\heltec-v3\lib72e\WebServer\middleware\AuthenticationMiddleware.cpp.o
+Compiling .pio\build\heltec-v3\lib72e\WebServer\middleware\CorsMiddleware.cpp.o
+Compiling .pio\build\heltec-v3\lib72e\WebServer\middleware\LoggingMiddleware.cpp.o
+Compiling .pio\build\heltec-v3\lib72e\WebServer\middleware\MiddlewareChain.cpp.o
+Compiling .pio\build\heltec-v3\lib7e0\ESPmDNS\ESPmDNS.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLE2901.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLE2902.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLE2904.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEAddress.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEAdvertisedDevice.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEAdvertising.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEBeacon.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLECharacteristic.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLECharacteristicMap.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEClient.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEDescriptor.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEDescriptorMap.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEDevice.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEEddystoneTLM.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEEddystoneURL.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEExceptions.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEHIDDevice.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLERemoteCharacteristic.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLERemoteDescriptor.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLERemoteService.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEScan.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLESecurity.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEServer.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEService.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEServiceMap.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEUUID.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEUtils.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\BLEValue.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\FreeRTOS.cpp.o
+Compiling .pio\build\heltec-v3\lib57f\BLE\GeneralUtils.cpp.o
+Compiling .pio\build\heltec-v3\lib303\LittleFS\LittleFS.cpp.o
+Compiling .pio\build\heltec-v3\libe8c\NetworkClientSecure\NetworkClientSecure.cpp.o
+Compiling .pio\build\heltec-v3\libe8c\NetworkClientSecure\ssl_client.cpp.o
+Compiling .pio\build\heltec-v3\lib556\AsyncUDP\AsyncUDP.cpp.o
+Compiling .pio\build\heltec-v3\src\BluetoothCommon.cpp.o
+Compiling .pio\build\heltec-v3\src\DebugConfiguration.cpp.o
+Compiling .pio\build\heltec-v3\src\DisplayFormatters.cpp.o
+Compiling .pio\build\heltec-v3\src\FSCommon.cpp.o
+Compiling .pio\build\heltec-v3\src\GpioLogic.cpp.o
+Compiling .pio\build\heltec-v3\src\MessageStore.cpp.o
+Compiling .pio\build\heltec-v3\src\Observer.cpp.o
+Compiling .pio\build\heltec-v3\src\Power.cpp.o
+Compiling .pio\build\heltec-v3\src\PowerFSM.cpp.o
+Compiling .pio\build\heltec-v3\src\PowerMon.cpp.o
+Compiling .pio\build\heltec-v3\src\RedirectablePrint.cpp.o
+Compiling .pio\build\heltec-v3\src\SPILock.cpp.o
+Compiling .pio\build\heltec-v3\src\SafeFile.cpp.o
+Compiling .pio\build\heltec-v3\src\SerialConsole.cpp.o
+Compiling .pio\build\heltec-v3\src\airtime.cpp.o
+Compiling .pio\build\heltec-v3\src\buzz\BuzzerFeedbackThread.cpp.o
+Compiling .pio\build\heltec-v3\src\buzz\buzz.cpp.o
+Compiling .pio\build\heltec-v3\src\concurrency\BinarySemaphoreFreeRTOS.cpp.o
+Compiling .pio\build\heltec-v3\src\concurrency\BinarySemaphorePosix.cpp.o
+Compiling .pio\build\heltec-v3\src\concurrency\InterruptableDelay.cpp.o
+Compiling .pio\build\heltec-v3\src\concurrency\Lock.cpp.o
+Compiling .pio\build\heltec-v3\src\concurrency\LockGuard.cpp.o
+Compiling .pio\build\heltec-v3\src\concurrency\NotifiedWorkerThread.cpp.o
+Compiling .pio\build\heltec-v3\src\concurrency\OSThread.cpp.o
+Compiling .pio\build\heltec-v3\src\detect\ScanI2C.cpp.o
+Compiling .pio\build\heltec-v3\src\detect\ScanI2CConsumer.cpp.o
+Compiling .pio\build\heltec-v3\src\detect\ScanI2CTwoWire.cpp.o
+Compiling .pio\build\heltec-v3\src\gps\GPS.cpp.o
+Compiling .pio\build\heltec-v3\src\gps\GPSUpdateScheduling.cpp.o
+Compiling .pio\build\heltec-v3\src\gps\GeoCoord.cpp.o
+Compiling .pio\build\heltec-v3\src\gps\NMEAWPL.cpp.o
+Compiling .pio\build\heltec-v3\src\gps\RTC.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\EInkDisplay2.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\EInkDynamicDisplay.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\EInkParallelDisplay.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\EmoteRenderer.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\HUB75Display.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\Panel_sdl.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\Screen.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\ScreenGlobals.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\SharedUIDisplay.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\TFTColorRegions.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\TFTDisplay.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\TimeFormatters.cpp.o
+src/detect/ScanI2CTwoWire.cpp: In member function 'virtual void 
+ScanI2CTwoWire::scanPort(ScanI2C::I2CPort, uint8_t*, uint8_t)':
+src/detect/ScanI2CTwoWire.cpp:416:21: warning: this statement may fall through 
+[-Wimplicit-fallthrough=]
+  416 |                     if (type == DPS310 || type == SPA06) {
+      |                     ^~
+src/detect/ScanI2CTwoWire.cpp:419:17: note: here
+  419 |                 default:
+      |                 ^~~~~~~
+Compiling .pio\build\heltec-v3\src\graphics\VirtualKeyboard.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\draw\ClockRenderer.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\draw\CompassRenderer.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\draw\DebugRenderer.cpp.o
+src/gps/GPS.cpp: In member function 'bool GPS::verifyCachedProbePresence()':
+src/gps/GPS.cpp:721:30: warning: this statement may fall through 
+[-Wimplicit-fallthrough=]
+  721 |         cachedProbeModelName = "L76B";
+      |         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+src/gps/GPS.cpp:722:5: note: here
+  722 |     case GNSS_MODEL_MTK_PA1010D:
+      |     ^~~~
+src/gps/GPS.cpp:723:9: warning: this statement may fall through 
+[-Wimplicit-fallthrough=]
+  723 |         if (cachedProbeModel == GNSS_MODEL_MTK_PA1010D)
+      |         ^~
+src/gps/GPS.cpp:725:5: note: here
+  725 |     case GNSS_MODEL_MTK_PA1616S:
+      |     ^~~~
+src/gps/GPS.cpp:726:9: warning: this statement may fall through 
+[-Wimplicit-fallthrough=]
+  726 |         if (cachedProbeModel == GNSS_MODEL_MTK_PA1616S)
+      |         ^~
+src/gps/GPS.cpp:728:5: note: here
+  728 |     case GNSS_MODEL_LS20031:
+      |     ^~~~
+src/gps/GPS.cpp:735:30: warning: this statement may fall through 
+[-Wimplicit-fallthrough=]
+  735 |         cachedProbeModelName = "AG3335";
+      |         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+src/gps/GPS.cpp:736:5: note: here
+  736 |     case GNSS_MODEL_AG3352:
+      |     ^~~~
+Compiling .pio\build\heltec-v3\src\graphics\draw\MenuHandler.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\draw\MessageRenderer.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\draw\NodeListRenderer.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\draw\NotificationRenderer.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\draw\UIRenderer.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\emotes.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\fonts\EinkDisplayFonts.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\fonts\OLEDDisplayFontsCS.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\fonts\OLEDDisplayFontsGR.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\fonts\OLEDDisplayFontsPL.cpp.o
+src/graphics/SharedUIDisplay.cpp: In function 'void 
+graphics::drawCommonHeader(OLEDDisplay*, int16_t, int16_t, const char*, bool, 
+bool, bool, bool, uint16_t)':
+src/graphics/SharedUIDisplay.cpp:134:24: warning: unused variable 
+'headerColor' [-Wunused-variable]
+  134 |         const uint16_t headerColor = getThemeHeaderBg();
+      |                        ^~~~~~~~~~~
+src/graphics/SharedUIDisplay.cpp:136:24: warning: unused variable 
+'headerTitleColorForRole' [-Wunused-variable]
+  136 |         const uint16_t headerTitleColorForRole = 
+use_title_color_override ? title_color_override : headerTextColor;
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~
+src/graphics/SharedUIDisplay.cpp:137:18: warning: unused variable 
+'headerStatusColor' [-Wunused-variable]
+  137 |         uint16_t headerStatusColor = getThemeHeaderStatus();
+      |                  ^~~~~~~~~~~~~~~~~
+src/graphics/SharedUIDisplay.cpp:319:19: warning: unused variable 
+'percentWidth' [-Wunused-variable]
+  319 |         const int percentWidth = display->getStringWidth("%");
+      |                   ^~~~~~~~~~~~
+src/graphics/SharedUIDisplay.cpp:121:20: warning: unused variable 
+'headerColorForRoles' [-Wunused-variable]
+  121 |     const uint16_t headerColorForRoles = getThemeHeaderBg();
+      |                    ^~~~~~~~~~~~~~~~~~~
+src/graphics/SharedUIDisplay.cpp:235:10: warning: unused variable 
+'hasBatteryFillRegion' [-Wunused-variable]
+  235 |     bool hasBatteryFillRegion = false;
+      |          ^~~~~~~~~~~~~~~~~~~~
+src/graphics/SharedUIDisplay.cpp:236:13: warning: unused variable 
+'batteryFillRegionX' [-Wunused-variable]
+  236 |     int16_t batteryFillRegionX = 0;
+      |             ^~~~~~~~~~~~~~~~~~
+src/graphics/SharedUIDisplay.cpp:237:13: warning: unused variable 
+'batteryFillRegionY' [-Wunused-variable]
+  237 |     int16_t batteryFillRegionY = 0;
+      |             ^~~~~~~~~~~~~~~~~~
+src/graphics/SharedUIDisplay.cpp:238:13: warning: unused variable 
+'batteryFillRegionW' [-Wunused-variable]
+  238 |     int16_t batteryFillRegionW = 0;
+      |             ^~~~~~~~~~~~~~~~~~
+src/graphics/SharedUIDisplay.cpp:239:13: warning: unused variable 
+'batteryFillRegionH' [-Wunused-variable]
+  239 |     int16_t batteryFillRegionH = 0;
+      |             ^~~~~~~~~~~~~~~~~~
+src/graphics/SharedUIDisplay.cpp: In function 'void 
+graphics::drawCommonFooter(OLEDDisplay*, int16_t, int16_t)':
+src/graphics/SharedUIDisplay.cpp:572:15: warning: unused variable 'iconW' 
+[-Wunused-variable]
+  572 |     const int iconW = connection_icon_width * scale;
+      |               ^~~~~
+src/graphics/SharedUIDisplay.cpp:573:15: warning: unused variable 'iconH' 
+[-Wunused-variable]
+  573 |     const int iconH = connection_icon_height * scale;
+      |               ^~~~~
+Compiling .pio\build\heltec-v3\src\graphics\fonts\OLEDDisplayFontsRU.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\fonts\OLEDDisplayFontsUA.cpp.o
+Compiling .pio\build\heltec-v3\src\graphics\tftSetup.cpp.o
+Compiling .pio\build\heltec-v3\src\input\BBQ10Keyboard.cpp.o
+Compiling .pio\build\heltec-v3\src\input\ButtonThread.cpp.o
+Compiling .pio\build\heltec-v3\src\input\CardputerKeyboard.cpp.o
+Compiling .pio\build\heltec-v3\src\input\ExpressLRSFiveWay.cpp.o
+Compiling .pio\build\heltec-v3\src\input\HackadayCommunicatorKeyboard.cpp.o
+Compiling .pio\build\heltec-v3\src\input\HapticFeedback.cpp.o
+Compiling .pio\build\heltec-v3\src\input\InputBroker.cpp.o
+Compiling .pio\build\heltec-v3\src\input\LinuxInput.cpp.o
+src/graphics/draw/DebugRenderer.cpp: In function 'void 
+graphics::DebugRenderer::drawLoRaFocused(OLEDDisplay*, OLEDDisplayUiState*, 
+int16_t, int16_t)':
+src/graphics/draw/DebugRenderer.cpp:469:15: warning: unused variable 
+'raw_chutil_percent' [-Wunused-variable]
+  469 |     const int raw_chutil_percent = chutil_percent;
+      |               ^~~~~~~~~~~~~~~~~~
+Compiling .pio\build\heltec-v3\src\input\LinuxInputImpl.cpp.o
+Compiling .pio\build\heltec-v3\src\input\LinuxJoystick.cpp.o
+Compiling .pio\build\heltec-v3\src\input\MPR121Keyboard.cpp.o
+src/graphics/draw/NotificationRenderer.cpp: In static member function 'static 
+void graphics::NotificationRenderer::drawNotificationBox(OLEDDisplay*, 
+OLEDDisplayUiState*, const char**, uint16_t, uint8_t, uint16_t)':
+src/graphics/draw/NotificationRenderer.cpp:1032:27: warning: unused variable 
+'maxBarHeight' [-Wunused-variable]
+ 1032 |                 const int maxBarHeight = totalBars * barHeightStep;
+      |                           ^~~~~~~~~~~~
+Compiling .pio\build\heltec-v3\src\input\RotaryEncoderImpl.cpp.o
+Compiling .pio\build\heltec-v3\src\input\RotaryEncoderInterruptBase.cpp.o
+Compiling .pio\build\heltec-v3\src\input\RotaryEncoderInterruptImpl1.cpp.o
+Compiling .pio\build\heltec-v3\src\input\SeesawRotary.cpp.o
+Compiling .pio\build\heltec-v3\src\input\SerialKeyboard.cpp.o
+Compiling .pio\build\heltec-v3\src\input\SerialKeyboardImpl.cpp.o
+Compiling .pio\build\heltec-v3\src\input\TCA8418Keyboard.cpp.o
+src/graphics/draw/UIRenderer.cpp: In static member function 'static void 
+graphics::UIRenderer::drawDeviceFocused(OLEDDisplay*, OLEDDisplayUiState*, 
+int16_t, int16_t)':
+src/graphics/draw/UIRenderer.cpp:1301:35: warning: the address of 
+'_meshtastic_User::short_name' will never be NULL [-Waddress]
+ 1301 |     const char *shortName = owner.short_name ? owner.short_name : "";
+      |                             ~~~~~~^~~~~~~~~~
+In file included from src/RedirectablePrint.h:5,
+                 from src/SerialConsole.h:3,
+                 from src/DebugConfiguration.h:39,
+                 from src/configuration.h:685,
+                 from src/graphics/draw/UIRenderer.cpp:1:
+src/mesh/generated/meshtastic/mesh.pb.h:798:10: note: 
+'_meshtastic_User::short_name' declared here
+  798 |     char short_name[5];
+      |          ^~~~~~~~~~
+src/graphics/draw/UIRenderer.cpp:1255:15: warning: unused variable 
+'raw_chutil_percent' [-Wunused-variable]
+ 1255 |     const int raw_chutil_percent = chutil_percent;
+      |               ^~~~~~~~~~~~~~~~~~
+src/graphics/draw/UIRenderer.cpp: In static member function 'static void 
+graphics::UIRenderer::drawIconScreen(const char*, OLEDDisplay*, 
+OLEDDisplayUiState*, int16_t, int16_t)':
+src/graphics/draw/UIRenderer.cpp:1553:15: warning: the address of 
+'_meshtastic_User::short_name' will never be NULL [-Waddress]
+ 1553 |     if (owner.short_name && owner.short_name[0]) {
+      |         ~~~~~~^~~~~~~~~~
+src/mesh/generated/meshtastic/mesh.pb.h:798:10: note: 
+'_meshtastic_User::short_name' declared here
+  798 |     char short_name[5];
+      |          ^~~~~~~~~~
+src/graphics/draw/UIRenderer.cpp: In static member function 'static void 
+graphics::UIRenderer::drawNavigationBar(OLEDDisplay*, OLEDDisplayUiState*)':
+src/graphics/draw/UIRenderer.cpp:1985:13: warning: unused variable 'regionX' 
+[-Wunused-variable]
+ 1985 |         int regionX = baseX;
+      |             ^~~~~~~
+src/graphics/draw/UIRenderer.cpp:1997:13: warning: unused variable 'regionX' 
+[-Wunused-variable]
+ 1997 |         int regionX = baseX - maxW + 1;
+      |             ^~~~~~~
+Compiling .pio\build\heltec-v3\src\input\TCA8418KeyboardBase.cpp.o
+Compiling .pio\build\heltec-v3\src\input\TDeckProKeyboard.cpp.o
+Compiling .pio\build\heltec-v3\src\input\TLoraPagerKeyboard.cpp.o
+Compiling .pio\build\heltec-v3\src\input\TouchScreenBase.cpp.o
+Compiling .pio\build\heltec-v3\src\input\TouchScreenImpl1.cpp.o
+Compiling .pio\build\heltec-v3\src\input\TrackballInterruptBase.cpp.o
+Compiling .pio\build\heltec-v3\src\input\TrackballInterruptImpl1.cpp.o
+Compiling .pio\build\heltec-v3\src\input\UpDownInterruptBase.cpp.o
+Compiling .pio\build\heltec-v3\src\input\UpDownInterruptImpl1.cpp.o
+Compiling .pio\build\heltec-v3\src\input\cardKbI2cImpl.cpp.o
+Compiling .pio\build\heltec-v3\src\input\i2cButton.cpp.o
+Compiling .pio\build\heltec-v3\src\input\kbI2cBase.cpp.o
+Compiling .pio\build\heltec-v3\src\input\kbMatrixBase.cpp.o
+Compiling .pio\build\heltec-v3\src\input\kbMatrixImpl.cpp.o
+Compiling .pio\build\heltec-v3\src\main.cpp.o
+Compiling .pio\build\heltec-v3\src\memGet.cpp.o
+Compiling .pio\build\heltec-v3\src\memory\MemAudit.cpp.o
+Compiling .pio\build\heltec-v3\src\meshUtils.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\Channels.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\CryptoEngine.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\Default.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\FloodingRouter.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\HardwareRNG.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\InterfacesTemplates.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\LLCC68Interface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\LR1110Interface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\LR1120Interface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\LR1121Interface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\LR11x0Interface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\LR2021Interface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\LR20x0Interface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\LoRaFEMInterface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\MeshModule.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\MeshPacketQueue.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\MeshService.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\NextHopRouter.cpp.o
+In file included from src/mesh/CryptoEngine.cpp:17:
+.pio/libdeps/heltec-v3/Crypto/XEdDSA.h:22:22: warning: 'crypto_uint64 
+load_3(const unsigned char*)' declared 'static' but never defined 
+[-Wunused-function]
+   22 | static crypto_uint64 load_3(const unsigned char *in);
+      |                      ^~~~~~
+.pio/libdeps/heltec-v3/Crypto/XEdDSA.h:24:22: warning: 'crypto_uint64 
+load_4(const unsigned char*)' declared 'static' but never defined 
+[-Wunused-function]
+   24 | static crypto_uint64 load_4(const unsigned char *in);
+      |                      ^~~~~~
+Compiling .pio\build\heltec-v3\src\mesh\NodeDB.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\NodeDBLegacyMigration.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\PacketHistory.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\PhoneAPI.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\PositionPrecision.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\ProtobufModule.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\RF95Interface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\RadioInterface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\RadioLibInterface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\RadioLibRF95.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\ReliableRouter.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\Router.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\STM32WLE5JCInterface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\SX1262Interface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\SX1268Interface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\SX126xInterface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\SX1280Interface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\SX128xInterface.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\StreamAPI.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\StreamFrameWriter.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\Throttle.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\TransmitHistory.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\TypeConversions.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\WarmNodeStore.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\aes-ccm.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\api\PacketAPI.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\api\ServerAPI.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\api\WiFiServerAPI.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\api\ethServerAPI.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\admin.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\apponly.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\atak.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\cannedmessages.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\channel.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\clientonly.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\config.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\connection_status.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\device_ui.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\deviceonly.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\deviceonly_legacy.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\interdevice.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\localonly.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\mesh.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\mesh_beacon.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\module_config.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\mqtt.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\paxcount.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\portnums.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\powermon.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\remote_hardware.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\rtttl.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\serial_hal.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\storeforward.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\telemetry.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\generated\meshtastic\xmodem.pb.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\http\ContentHandler.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\http\ContentHelper.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\http\WebServer.cpp.o
+Compiling .pio\build\heltec-v3\src\mesh\mesh-pb-constants.cpp.o
+src/mesh/aes-ccm.cpp: In function 'int constant_time_compare(const void*, 
+const void*, size_t)':
+src/mesh/aes-ccm.cpp:24:42: warning: type qualifiers ignored on cast result 
+type [-Wignored-qualifiers]
+   24 |     const volatile uint8_t *volatile a = (const volatile uint8_t 
+*volatile)a_;
+      |                                          
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/mesh/aes-ccm.cpp:25:42: warning: type qualifiers ignored on cast result 
+type [-Wignored-qualifiers]
+   25 |     const volatile uint8_t *volatile b = (const volatile uint8_t 
+*volatile)b_;
+      |                                          
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Compiling .pio\build\heltec-v3\src\mesh\wifi\WiFiAPClient.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\AdminModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\AtakPluginModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\CannedMessageModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\DetectionSensorModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\DropzoneModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\ExternalNotificationModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\GenericThreadModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\HopScalingModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\KeyVerificationModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\MeshBeaconModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\Modules.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\NeighborInfoModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\NodeInfoModule.cpp.o
+In file included from C:/Users/Administrator/.platformio/packages/framework-ard
+uinoespressif32-libs/esp32/include/lwip/include/lwip/netdb.h:9,
+                 from 
+.pio/libdeps/heltec-v3/esp32_https_server/src/HTTPServer.hpp:11,
+                 from 
+.pio/libdeps/heltec-v3/esp32_https_server/src/HTTPSServer.hpp:16,
+                 from src/mesh/http/WebServer.cpp:44:
+C:/Users/Administrator/.platformio/packages/framework-arduinoespressif32-libs/e
+sp32/include/lwip/lwip/src/include/lwip/netdb.h:75:9: warning: "NO_DATA" 
+redefined
+   75 | #define NO_DATA         211
+      |         ^~~~~~~
+In file included from 
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.h:13,
+                 from src/motion/BMM150Sensor.h:10,
+                 from src/motion/AccelerometerThread.h:16,
+                 from src/main.h:74,
+                 from src/mesh/http/WebServer.cpp:5:
+.pio/libdeps/heltec-v3/DFRobot_BMM150/bmm150_defs.h:430:9: note: this is the 
+location of the previous definition
+  430 | #define NO_DATA                          -32768
+      |         ^~~~~~~
+In file included from C:/Users/Administrator/.platformio/packages/framework-ard
+uinoespressif32-libs/esp32/include/lwip/include/lwip/netdb.h:9,
+                 from 
+.pio/libdeps/heltec-v3/esp32_https_server/src/HTTPServer.hpp:11,
+                 from 
+.pio/libdeps/heltec-v3/esp32_https_server/src/HTTPSServer.hpp:16,
+                 from src/mesh/http/ContentHandler.cpp:41:
+C:/Users/Administrator/.platformio/packages/framework-arduinoespressif32-libs/e
+sp32/include/lwip/lwip/src/include/lwip/netdb.h:75:9: warning: "NO_DATA" 
+redefined
+   75 | #define NO_DATA         211
+      |         ^~~~~~~
+In file included from 
+.pio/libdeps/heltec-v3/DFRobot_BMM150/DFRobot_BMM150.h:13,
+                 from src/motion/BMM150Sensor.h:10,
+                 from src/motion/AccelerometerThread.h:16,
+                 from src/main.h:74,
+                 from src/mesh/http/ContentHandler.cpp:6:
+.pio/libdeps/heltec-v3/DFRobot_BMM150/bmm150_defs.h:430:9: note: this is the 
+location of the previous definition
+  430 | #define NO_DATA                          -32768
+      |         ^~~~~~~
+Compiling .pio\build\heltec-v3\src\modules\OnScreenKeyboardModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\PositionModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\PowerStressModule.cpp.o
+src/modules/CannedMessageModule.cpp: In member function 'virtual void 
+CannedMessageModule::drawFrame(OLEDDisplay*, OLEDDisplayUiState*, int16_t, 
+int16_t)':
+src/modules/CannedMessageModule.cpp:2070:17: warning: unused variable 
+'textYOffset' [-Wunused-variable]
+ 2070 |             int textYOffset = (rowHeight - FONT_HEIGHT_SMALL) / 2;
+      |                 ^~~~~~~~~~~
+src/modules/CannedMessageModule.cpp: In member function 'virtual 
+ProcessMessage CannedMessageModule::handleReceived(const 
+meshtastic_MeshPacket&)':
+src/modules/CannedMessageModule.cpp:2248:35: warning: the address of 
+'nodeName' will never be NULL [-Waddress]
+ 2248 |                                  (nodeName && nodeName[0]) ? nodeName 
+: "unknown", qualityLabel);
+      |                                   ^~~~~~~~
+src/modules/CannedMessageModule.cpp:2220:22: note: 'nodeName' declared here
+ 2220 |                 char nodeName[48];
+      |                      ^~~~~~~~
+src/modules/CannedMessageModule.cpp:2253:31: warning: the address of 
+'nodeName' will never be NULL [-Waddress]
+ 2253 |                              (nodeName && nodeName[0]) ? nodeName : 
+"unknown", qualityLabel);
+      |                               ^~~~~~~~
+src/modules/CannedMessageModule.cpp:2220:22: note: 'nodeName' declared here
+ 2220 |                 char nodeName[48];
+      |                      ^~~~~~~~
+src/modules/CannedMessageModule.cpp:2259:74: warning: the address of 
+'nodeName' will never be NULL [-Waddress]
+ 2259 |                         snprintf(buf, sizeof(buf), "DM failed 
+to\n@%s", (nodeName && nodeName[0]) ? nodeName : "unknown");
+      |                                                                        
+  ^~~~~~~~
+src/modules/CannedMessageModule.cpp:2220:22: note: 'nodeName' declared here
+ 2220 |                 char nodeName[48];
+      |                      ^~~~~~~~
+Compiling .pio\build\heltec-v3\src\modules\RangeTestModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\RemoteHardwareModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\ReplyBotModule.cpp.o
+In file included from src/modules/Modules.cpp:81:
+src/modules/SharpPM25Sensor.h:42:18: error: 'adc1_channel_t' does not name a 
+type; did you mean 'adc_channel_t'?
+   42 |     static const adc1_channel_t SENSOR_OUT_PIN = ADC1_CHANNEL_4; // 
+GPIO 4 / ADC1_CH4
+      |                  ^~~~~~~~~~~~~~
+      |                  adc_channel_t
+Compiling .pio\build\heltec-v3\src\modules\ReplyModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\RoutingModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\SerialModule.cpp.o
+Compiling .pio\build\heltec-v3\src\modules\SharpPM25Sensor.cpp.o
+*** [.pio\build\heltec-v3\src\modules\Modules.cpp.o] Error 1
+========================= [FAILED] Took 181.65 seconds 
+=========================
+
+Environment    Status    Duration
+-------------  --------  ------------
+heltec-v3      FAILED    00:03:01.652
+==================== 1 failed, 0 succeeded in 00:03:01.652 ====================
+
